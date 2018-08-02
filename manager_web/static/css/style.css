@@ -1,0 +1,404 @@
+
+@charset "UTF-8";
+
+body {
+        background:rgb(237, 240, 241);
+        padding: 80px 0 0 0;   
+}
+
+
+body, input, button{
+       /* font-family: 'Black Han Sans', sans-serif;*/
+      /*  font-family: 'Nanum Myeongjo', serif;*/
+        font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.noFill {
+        fill:none;
+}
+
+header {
+        width:100%;
+        height:130px;
+
+        position:fixed;
+        padding:15px;
+        top:0;
+        left:0;
+        z-index:5;
+
+        background:#004b87;
+        box-shadow:0px 2px 4px rgba(44,62,80,0.15);
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+}
+header h1{
+        width: 100%;
+        height:50px;
+        color:#fff;
+
+}
+
+header input{
+        width:280px;
+        height:40px;
+        float:right;
+        position: absolute;
+        top:70px;
+        right: 10px;
+        color:#fff;
+        font-size:15px;
+        font-weight:400;
+        text-indent:18px;
+        padding:0 60px 0 0;
+        background:rgba(255,255,255,0.2);
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border:0px;
+        box-shadow:none;
+        outline:none;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-progress-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+
+header input::-webkit-input-placehold {
+        color:rgba(255,255,255,0.75);
+}
+
+header input::-moz-input-placehold {
+        color:rgba(255,255,255,0.75);
+}
+header input::-moz-input-placehold {
+        color:rgba(255,255,255,0.75);
+}
+header input::-ms-input-placehold {
+        color:rgba(255,255,255,0.75);
+}
+/*********** MENU button *************/
+header button.menu{
+        width: 80px;
+        height:40px;
+        position: absolute;
+        float:left;
+        top:70px;
+        background-color:rgb(255,255,255,0);
+        z-index:2;
+        border-radius:15px;
+        font-size: 20px;
+        box-shadow:none;
+        outline: none;
+        cursor:pointer;
+        box-shadow:none;
+        border:0px;
+        outline:none;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-progress-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+header button.menu a{
+        width:40px;
+        height: 40px;
+        position: absolute;
+        top:10px;
+        float:right;
+        right:5px;
+        color:#fff;
+        font-size:20px;
+        font-weight:700;
+}
+
+header button.menu svg {
+        width:20px;
+        height:20px;
+        position: absolute;
+        top:20px;
+        left:10px;
+        margin:-8px 0 0 -8px;
+}
+header button.menu:hover a{
+        color:#77bc1f
+        
+}
+header button.menu:hover svg .fill{
+        fill:#77bc1f;
+}
+
+/*********add button*****************/
+header button.add{
+        width: 40px;
+        height:40px;
+        position: absolute;
+        top:70px;
+        right:10px;
+        z-index:2;
+        border-radius:30px;
+        box-shadow:none;
+        outline: none;
+        cursor:pointer;
+        
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-progress-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+
+header button.add svg {
+        width:16px;
+        height:16px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin:-8px 0 0 -8px;
+}
+
+/*********** menu list ***********/
+ul.menu_list{
+        display:none;
+        width:200px;
+        height:100%;
+        background-color: #b1b1b3;
+        opacity: .8;
+        padding-top:80px;
+        float:left;
+        text-align:center;
+        font-size:20px;
+}
+ul li a{
+        text-decoration: none;
+        color:black;
+        display:block;
+}
+ul li a:hover{
+        background-color: #77bc1f;
+}
+/*******container******/
+
+.container{
+        width:100%;
+        float:left;
+        position: absolute;
+        top:150px;
+        padding:15px;
+}
+
+ul.list{
+        width:100%;
+        float: left;
+
+}
+
+
+ul.list li{
+        width:100%;
+        widows: 100%;
+        min-height:50px;
+        float:left;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 14;
+        font-weight: 500;
+        line-height: 22px;
+        color:#444;
+        position: relative;
+        box-shadow:0px 1px 2px rgba(44,62,80,0.10);
+        margin: 0px 0 10px 0;
+        padding: 14px 100px 14px 14px;
+}
+
+
+ul.list li:last-of-type{
+        margin: 0;
+}
+
+
+
+
+
+/*
+
+ul.todo{
+        width:100%;
+        float: left;
+
+}
+
+ul.todo li{
+        width:100%;
+        widows: 100%;
+        min-height:50px;
+        float:left;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 14;
+        font-weight: 500;
+        line-height: 22px;
+        color:#444;
+        position: relative;
+        box-shadow:0px 1px 2px rgba(44,62,80,0.10);
+        margin: 0px 0 10px 0;
+        padding: 14px 100px 14px 14px;
+}
+
+ul.todo li:last-of-type{
+        margin: 0;
+}
+
+ul.todo li .buttons {
+        width:100px;
+        height: 50px;
+        
+        position: absolute;
+        top:0;
+        right:0;
+}
+
+ul.todo li .buttons button {
+        width:50px;
+        height: 50px;
+        float: left;
+        position: relative;
+        border:0px;
+        box-shadow: none;
+        outline:none;
+        cursor:pointer;
+
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-progress-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+
+
+
+
+ul.todo li .buttons button:last-of-type:before{
+        content:'';
+        width:1px;
+        height: 30px;
+        position: absolute;
+        top:10px;
+        left:0;
+        background: #edf0f1;
+
+}
+ul.todo li .buttons button svg {
+        width:22px;
+        height:22px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin:-11px 0 0 -11px
+}
+
+ul.todo li .buttons button.complete svg {
+
+        border-radius: 11px;
+        border: 1.5px solid #004b87;
+        
+        -webkit-transition: background 0.2s ease;
+        -moz-transition: background 0.2s ease;
+        -ms-transition: background 0.2s ease;
+        -o-transition: background 0.2s ease;
+        transition: background 0.2s ease;
+}
+
+ul.todo#completed li .buttons button.complete svg {
+        background: #004b87;
+        border: 0px;
+      }
+
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg {
+        background:#004b87;
+}
+ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
+        fill:#fff;
+}
+
+ul.todo#completed li .buttons button.complete svg .fill{
+        fill: #fff;
+}
+
+ul.todo li .buttons button svg .fill {
+        transition: fill 0.2s ease;
+      }
+
+
+
+
+ul.todo li .buttons button svg .fill{
+        -webkit-transition: fill 0.2s ease;
+        -moz-transition: fill 0.2s ease;
+        -ms-transition: fill 0.2s ease;
+        -o-transition: fill 0.2s ease;
+        transition:fill 0.2s ease;
+
+}
+
+
+
+
+ul.todo li .buttons button.remove svg .fill {
+        fill:#c0cecb;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill {
+        fill:#e85656;
+        cursor: pointer;
+}
+
+ul.todo li .buttons button.complete svg .fill {
+        fill: #25b99a;
+}
+
+ul.todo#completed {
+        position: relative;
+        padding: 60px 0 0 0;
+      }
+ul.todo#completed:before {
+        content: '';
+        width: 150px;
+        height: 1px;
+        background: #d8e5e0;
+      
+        position: absolute;
+        top: 30px;
+        left: 50%;
+      
+        margin: 0 0 0 -75px;
+}
+
+ul.todo#todo:empty:after{
+        content: 'You have nothing to-do!';
+        margin: 15px 0 0 0;
+
+}
+
+ul.todo#completed:empty:after{
+        content:'You have yet to compete any tasks'
+}
+
+ul.todo#todo:after,
+ul.todo#complted:after{
+        width:100%;
+        display :black;
+        text-align: center;
+        font-size:12px;
+        color:#aaa;
+}
+
+*/
